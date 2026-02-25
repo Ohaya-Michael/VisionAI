@@ -1,10 +1,10 @@
 [build]
   command = "pip install -r requirements.txt"
-  functions = "vision_backend/netlify/functions"
+  functions = "functions"
 
 [[redirects]]
   from = "/api/*"
-  to = "/.vision_backend/netlify/functions/api/:splat"
+  to = "/.netlify/functions/api/:splat"
   status = 200
 
 [functions]
