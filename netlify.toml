@@ -9,5 +9,5 @@
   status = 200
 
 [functions]
-  python_version = "3.12"
-  node_bundler = "esbuild" # Optional, but good for performance
+  python_version = "3.9"
+  node_bundler = "esbuild"
