@@ -1,7 +1,8 @@
 [build]
   command = "pip install -r requirements.txt"
+  command = "npm run build"
+  publish = "dist"
   functions = "functions"
-  publish = "."
 
 [[redirects]]
   from = "/api/*"
@@ -10,4 +11,3 @@
 
 [functions]
   python_version = "3.9"
-  node_bundler = "esbuild"
