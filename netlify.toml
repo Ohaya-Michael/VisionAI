@@ -1,6 +1,7 @@
 [build]
   command = "pip install -r requirements.txt"
   functions = "functions"
+  publish = "."
 
 [[redirects]]
   from = "/api/*"
@@ -8,4 +9,5 @@
   status = 200
 
 [functions]
+  python_version = "3.12"
   node_bundler = "esbuild" # Optional, but good for performance
