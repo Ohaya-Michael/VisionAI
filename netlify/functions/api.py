@@ -4,13 +4,9 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/api/hello")
 def hello():
-    return {"message": "Hello from FastAPI on Netlify!"}
+    return {"message": "Hello from FastAPI on Netlify Functions!"}
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int):
-    return {"item_id": item_id, "status": "success"}
-
-# This is the entry point for Netlify Functions
+# This is what Netlify calls
 handler = Mangum(app)
